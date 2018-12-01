@@ -20,3 +20,7 @@ $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 endif
 
 DEVICE_PACKAGE_OVERLAYS += device/google/bonito/overlay-lineage
+
+# EUICC
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
