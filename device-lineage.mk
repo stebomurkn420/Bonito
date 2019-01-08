@@ -18,3 +18,5 @@
 ifneq ($(TARGET_BUILD_GAPPS),false)
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 endif
+
+DEVICE_PACKAGE_OVERLAYS += device/google/bonito/overlay-lineage
