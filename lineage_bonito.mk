@@ -11,6 +11,9 @@ $(call inherit-product, device/google/bonito/aosp_bonito.mk)
 # Inherit Lineage device configuration
 $(call inherit-product, device/google/bonito/device-lineage.mk)
 
+# Inherit proprietary blobs
+$(call inherit-product-if-exists, vendor/google/bonito/bonito-vendor.mk)
+
 PRODUCT_NAME := lineage_bonito
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3a XL
