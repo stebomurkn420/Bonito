@@ -29,6 +29,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.mediadrmservice.enable=true
 
 DEVICE_PACKAGE_OVERLAYS += device/google/bonito/overlay-lineage
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += device/google/bonito/overlay-lineage/lineage-sdk
 
 # EUICC
 PRODUCT_COPY_FILES += \
