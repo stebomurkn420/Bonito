@@ -53,3 +53,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libstagefright_bufferpool@2.0.1
+
+# Citadel
+PRODUCT_PACKAGES += \
+    libnos_client_citadel \
+    nos_app_avb \
+    nos_app_keymaster \
+    nos_app_weaver
