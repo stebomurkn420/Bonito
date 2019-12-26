@@ -7,8 +7,10 @@ product/lib64/libaptXHD_encoder.so
 -product/priv-app/HotwordEnrollmentXGoogleRT5514/HotwordEnrollmentXGoogleRT5514.apk;PRESIGNED
 
 # Now Playing
+product/etc/ambient/matcher_tah.leveldb
 product/etc/firmware/music_detector.descriptor
 product/etc/firmware/music_detector.sound_model
+-product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 
 # Permissions
 product/etc/permissions/privapp-permissions-google-p.xml
