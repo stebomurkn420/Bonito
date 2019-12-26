@@ -44,4 +44,9 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    libwifi-hal-qcom
+    libwifi-hal-qcom \
+    libcld80211
+
+# Vehicle HAL
+PRODUCT_PACKAGES += \
+    android.hardware.automotive.vehicle@2.0-manager-lib

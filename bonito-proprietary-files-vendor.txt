@@ -418,7 +418,6 @@ vendor/firmware/widevine.mbn
 vendor/firmware/widevine.mdt
 vendor/firmware/wlanmdsp.mbn
 -vendor/framework/com.google.android.camera.experimental2018.jar;PRESIGNED
-vendor/lib64/android.hardware.automotive.vehicle@2.0-manager-lib.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/camera/com.google.tuned.b4s4_imx355.bin
 vendor/lib64/camera/com.google.tuned.b4s4_imx363.bin
@@ -569,7 +568,6 @@ vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libgptutils.so
 vendor/lib64/libgsl.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
@@ -737,7 +735,6 @@ vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
-vendor/lib/android.hardware.automotive.vehicle@2.0-manager-lib.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/camera/com.qti.sensormodule.metric_imx363.bin
 vendor/lib/camera/com.qti.sensormodule.primax_imx355.bin
@@ -798,7 +795,6 @@ vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libCB.so
 vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
-vendor/lib/libcld80211.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneoplookup.so
 vendor/lib/libcneqmiutils.so
@@ -841,7 +837,6 @@ vendor/lib/libGPQTEEC_vendor.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
 vendor/lib/libGPTEE_vendor.so
-vendor/lib/libgptutils.so
 vendor/lib/libgsl.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
