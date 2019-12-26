@@ -154,3 +154,12 @@ product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so
 product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
 -product/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
 -product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
+
+# Pixel sysconfigs
+product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
+product/etc/sysconfig/google_build.xml
+product/etc/sysconfig/nexus.xml
+product/etc/sysconfig/pixel_2019_midyear_exclusive.xml
+product/etc/sysconfig/pixel_experience_2017.xml
+product/etc/sysconfig/pixel_experience_2018.xml
+product/etc/sysconfig/pixel_experience_2019_midyear.xml
