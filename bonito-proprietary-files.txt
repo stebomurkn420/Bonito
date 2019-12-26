@@ -148,4 +148,9 @@ product/etc/sysconfig/tmo_grsu_sysconfig.xml
 
 # VZW
 product/etc/permissions/features-verizon.xml
+product/etc/permissions/vzw_mvs_permissions.xml
+product/etc/sysconfig/vzw_mvs_sysconfig.xml
+product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so
+product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
+-product/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
 -product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
