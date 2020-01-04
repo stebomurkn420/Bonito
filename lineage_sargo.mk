@@ -8,6 +8,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/google/bonito/aosp_sargo.mk)
 
+# Inherit Lineage device configuration
+$(call inherit-product, device/google/bonito/device-lineage.mk)
+
 PRODUCT_NAME := lineage_sargo
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3a
