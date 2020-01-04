@@ -32,4 +32,6 @@ LOCAL_SRC_FILES := arraylist.c \
 LOCAL_SHARED_LIBRARIES := libcutils libutils
 LOCAL_MODULE_TAG := optional
 LOCAL_VENDOR_MODULE := true
+ifeq ($(LINEAGE_BUILD),)
 include $(BUILD_SHARED_LIBRARY)
+endif
