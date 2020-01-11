@@ -3,7 +3,7 @@ TARGET_SCREEN_HEIGHT := 2220
 TARGET_SCREEN_WIDTH := 1080
 
 # Inherit common Lineage product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bonito/aosp_sargo.mk)
@@ -16,7 +16,7 @@ $(call inherit-product, device/google/bonito/device-lineage.mk)
 $(call inherit-product-if-exists, vendor/google/sargo/sargo-vendor.mk)
 $(call inherit-product-if-exists, vendor/google/bonito/bonito-vendor.mk)
 
-PRODUCT_NAME := lineage_sargo
+PRODUCT_NAME := havoc_sargo
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3a
 

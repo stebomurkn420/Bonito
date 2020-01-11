@@ -40,6 +40,22 @@ VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 # Set boot SPL
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
+# Maintainer Prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.maintainer=stebomurkn420
+
+# Include Havoc boot animation
+PRODUCT_COPY_FILES += \
+    vendor/havoc/bootanimation/1080.zip:system/media/bootanimation.zip
+
+# Permission HACKERY
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=log \
+    ro.adb.secure=0 \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.debuggable=1 \
+    persist.service.adb.enable=1
+
 # MIDI feature
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
