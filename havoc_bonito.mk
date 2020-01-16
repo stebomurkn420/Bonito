@@ -19,4 +19,11 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3a XL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=bonito
+    PRODUCT_NAME="bonito" \
+    TARGET_DEVICE="bonito" \
+    PRIVATE_BUILD_DESC="bonito-user 10 QQ1A.200105.002 6031801 release-keys"
+
+BUILD_FINGERPRINT := "google/bonito/bonito:10/QQ1A.200105.002/6031801:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=google/bonito/bonito:10/QQ1A.200105.002/6031801:user/release-keys
