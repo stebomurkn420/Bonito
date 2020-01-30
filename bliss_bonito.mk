@@ -3,7 +3,7 @@ TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
 # Inherit common Lineage product configuration
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bonito/aosp_bonito.mk)
@@ -14,7 +14,7 @@ $(call inherit-product, device/google/bonito/device-lineage.mk)
 # Inherit proprietary blobs
 $(call inherit-product-if-exists, vendor/google/bonito/bonito-vendor.mk)
 
-PRODUCT_NAME := havoc_bonito
+PRODUCT_NAME := bliss_bonito
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3a XL
 
