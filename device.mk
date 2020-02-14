@@ -721,6 +721,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     pixelstats-vendor
 
+# Google Device
+PRODUCT_PACKAGES += \
+    SystemUIGoogle
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
