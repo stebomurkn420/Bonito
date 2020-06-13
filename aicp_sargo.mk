@@ -14,21 +14,29 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/google/bonito/aosp_bonito.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, device/google/bonito/aosp_sargo.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 $(call inherit-product, device/google/bonito/device-gahs.mk)
+# Include sargo before bonito to use sargo versions of blobs if they exist
+$(call inherit-product-if-exists, vendor/google/sargo/sargo-vendor.mk)
 $(call inherit-product-if-exists, vendor/google/bonito/bonito-vendor.mk)
 
 TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_HEIGHT := 2280
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_bonito
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="stebomurkn420"
+
+PRODUCT_NAME := aicp_sargo
 PRODUCT_BRAND := google
-PRODUCT_MODEL := Pixel 3a XL
+PRODUCT_MODEL := Pixel 3a
 
 # Spoof to pass SafetyNet
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=bonito
+    PRODUCT_NAME=sargo
 
 include device/google/bonito/base_fingerprint.mk
-BUILD_FINGERPRINT := google/bonito/bonito:$(BASE_FINGERPRINT):user/release-keys
+BUILD_FINGERPRINT := google/sargo/sargo:$(BASE_FINGERPRINT):user/release-keys
